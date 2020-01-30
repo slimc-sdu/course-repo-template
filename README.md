@@ -1,2 +1,2 @@
 # DSxx: {course title}
-[Course description](course/course-description)
+[Course description](course/course-description.pdf)
