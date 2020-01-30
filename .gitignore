@@ -446,7 +446,7 @@ spec/fixtures/evil-files/
 out/
 /electron/
 
-
-!materials/
-!course/
-!lectures/
+# keep these directories
+!materials/*
+!course/*
+!lectures/*
