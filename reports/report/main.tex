@@ -2,10 +2,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[danish]{babel}
-\usepackage{lastpage, geometry, fancyhdr, float}
+\usepackage{lastpage, geometry, fancyhdr, float, pgfkeys, datetime}
 
 \usepackage{graphicx}
 \graphicspath{{./../static/}}
+
+\NeedsTeXFormat{LaTeX2e}
+%\ProvidesPackage{latexgit}[2020/04/20]
+%\RequirePackage{pgfkeys}
+%\RequirePackage{datetime}
+%\newcommand{\gitcommithash}[1][]{ &\git@commithash[#1]\git@result}
+
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -16,9 +23,10 @@
 \fancyfoot[RF]{Side \thepage \hspace{1pt} af \pageref{LastPage}}
 
 
-\begin{document}
 
-	\input{titlepage} \newpage
+\begin{document}
+	
+	\input{titlepage} \newpage	
 	\input{appendix}
 	
 \end{document}
