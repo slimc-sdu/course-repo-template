@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+\usepackage{lastpage, geometry, fancyhdr, float}
+
+\usepackage{graphicx}
+\graphicspath{{./../static/}}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+
+\fancyhead[LH]{<course id>}
+\fancyhead[RH]{IMADA}
+\fancyfoot[RF]{Side \thepage \hspace{1pt} af \pageref{LastPage}}
+
+
+\begin{document}
+
+	\input{titlepage} \newpage
+	\input{appendix}
+	
+\end{document}
